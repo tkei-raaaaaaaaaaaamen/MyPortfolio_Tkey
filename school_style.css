@@ -1,6 +1,6 @@
 
 .school-box {
-    height: 2250px;
+    height: 100%;
     width: 93%;
     /* 横幅を画面の80%に */
     margin: 40px auto;
@@ -57,10 +57,23 @@
 }
 
 .contxt {
-    flex: 1;             /* テキスト側を広げる */
+    flex: 1;
     margin: 0;
     font-size: 2rem;
     margin-left: 20px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.class-description {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.appeal-description {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .HP_img {
@@ -101,4 +114,46 @@
 
 .HP_img_link {
     text-decoration: none;
+}
+
+.mini_title{
+    margin-left: 1%;
+    margin-bottom: 30px;
+}
+
+.mini_title .mini_eg{
+    font-size: 100px;
+    color: #fff;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        0px -2px 0 #000,
+        0px 2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mini_title .mini_jp {
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 1%;
+    max-width: 600px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.section-line {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 3px solid #222;   /* 濃い黒色で太めの線 */
+    width: 96%;                   /* 横幅を元の96%に戻す */
+    margin-left: auto;
+    margin-right: auto;
 }
