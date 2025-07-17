@@ -1,3 +1,10 @@
+p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
 
 .school-box {
     height: 100%;
@@ -149,7 +156,6 @@
 }
 
 .section-line {
-    margin-top: 80px;
     margin-bottom: 30px;
     border: none;
     border-top: 3px solid #222;   /* 濃い黒色で太めの線 */
