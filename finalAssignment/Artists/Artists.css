@@ -1,0 +1,146 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Artists.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Artists{
+    background-color: transparent;
+}
+
+.MORE{
+    font-size: 50px;
+}
+
+.t-th{
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    }
+    
+.mv-th{
+    margin-top: 30px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/すりぃ.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.three1 h2{
+    color:white;
+    text-align: center;
+}
+
+.three1 {
+    margin-right: 30px;
+}
+
+
+/* すりぃ画像 */
+.three2{
+    width: 400px;
+    height: 400px;
+}
+
+
+.t-jo{
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    }
+    
+.mv-john{
+    margin-top: 30px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ミラクルジュース\ _\ TOOBOE.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.jo1{
+    color:white;
+    text-align: center;
+}
+
+.jo1 {
+    margin-left: 30px;
+}
+
+/* john画像 */
+.jo2 img{
+    width: 430px;
+    height: 400px;
+}
+
+
+.t-ne{
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    }
+    
+.mv-ne{
+    margin-top: 30px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/第一次世界.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.ne1 h2{
+    color:white;
+    text-align: center;
+}
+
+.ne1 {
+    margin-right: 30px;
+}
+
+
+/* NEE画像 */
+.ne2 img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.t-ev{
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    }
+    
+.mv-ev{
+    margin-top: 30px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ドラマツルギー.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.ev1{
+    color:white;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* john画像 */
+.ev2 img{
+    width: 430px;
+    height: 400px;
+}

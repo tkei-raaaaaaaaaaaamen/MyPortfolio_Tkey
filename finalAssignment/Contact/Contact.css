@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Contact.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    color:aliceblue;
+}
+
+table{margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sousin{
+    width: 200px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+
+h1{
+    margin-top: 50px;
+}
+
+a {
+    box-shadow: 0 0 3px 0 rgba(transparent), 0 2px 3px 0 rgba(transparent);
+    transition: .3s;
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: 0 15px 30px -5px rgba(transparent), 0 0 5px rgba(transparent);
+    transform: translateY(-7px);
+}
+
+.SNS {
+    margin-left: 40%;
+    display: flex;
+}
+
+.SNS img {
+    height: 60px;
+    width: 63px;
+    padding: 10px;
+}

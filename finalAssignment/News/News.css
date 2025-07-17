@@ -1,0 +1,31 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/News.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+th,
+td {
+    padding: 10px;
+    color:aliceblue;
+}
+table{
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 100%;
+}
+.cl1{
+    width: 60%;
+    margin-left: 20px;
+}
+.cl2{
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+main{
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+    }
