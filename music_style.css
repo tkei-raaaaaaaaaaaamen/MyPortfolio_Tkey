@@ -16,7 +16,7 @@
 }
 
 .genre-content strong {
-    color: #007acc;
+    color: #2c2c2c;
     font-weight: 600;
 }
 
@@ -37,15 +37,15 @@
 }
 
 .artist-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .artist-card h3 {
-    color: #007acc;
+    color: #2c2c2c;
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    border-bottom: 2px solid #007acc;
+    border-bottom: 2px solid #2c2c2c;
     padding-bottom: 0.5rem;
 }
 
@@ -61,10 +61,10 @@
 }
 
 .music-life-content h3 {
-    color: #007acc;
+    color: #2c2c2c;
     margin: 2rem 0 1rem 0;
     font-size: 1.2rem;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #2c2c2c;
     padding-left: 1rem;
 }
 
@@ -119,7 +119,7 @@
     font-style: italic;
 }
 
-/* 戻るリンク */
+/* 戻るリンク - シックなデザイン */
 .back-link {
     text-align: center;
     margin: 3rem 0 2rem 0;
@@ -127,20 +127,39 @@
 
 .back-button {
     display: inline-block;
-    background: linear-gradient(135deg, #007acc, #0056b3);
-    color: white;
+    background: #2c2c2c;
+    color: #ffffff;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border: 2px solid #2c2c2c;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.back-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
 .back-button:hover {
-    background: linear-gradient(135deg, #0056b3, #007acc);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 122, 204, 0.4);
+    background: transparent;
+    color: #2c2c2c;
+    border-color: #2c2c2c;
+}
+
+.back-button:hover::before {
+    left: 100%;
 }
 
 /* レスポンシブデザイン */
@@ -175,7 +194,7 @@
     }
     
     .back-button {
-        padding: 0.8rem 1.5rem;
+        padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
     }
 }
