@@ -1,0 +1,181 @@
+/* 音楽ページ専用スタイル */
+
+.music-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.genre-content {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.genre-content p {
+    margin-bottom: 1rem;
+}
+
+.genre-content strong {
+    color: #007acc;
+    font-weight: 600;
+}
+
+/* アーティストグリッド */
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.artist-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card h3 {
+    color: #007acc;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.5rem;
+}
+
+.artist-card p {
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+/* 音楽と私のセクション */
+.music-life-content {
+    line-height: 1.8;
+}
+
+.music-life-content h3 {
+    color: #007acc;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.2rem;
+    border-left: 4px solid #007acc;
+    padding-left: 1rem;
+}
+
+.music-life-content p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* プレイリストセクション */
+.playlist-container {
+    margin: 2rem 0;
+}
+
+.marquee-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+}
+
+.marquee-item a:hover {
+    transform: scale(1.05);
+}
+
+.marquee-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+}
+
+.track-title {
+    color: #333;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.playlist-note {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* 戻るリンク */
+.back-link {
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.back-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #007acc, #0056b3);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.3);
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #0056b3, #007acc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 122, 204, 0.4);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .artists-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .artist-card {
+        padding: 1rem;
+    }
+    
+    .marquee-item img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .track-title {
+        max-width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .music-life-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-box {
+        padding: 0 15px;
+    }
+    
+    .back-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
