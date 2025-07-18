@@ -1,141 +1,284 @@
 /* セクション全体のスタイル */
 .study-section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .projects-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: grid;
+    gap: 30px;
 }
 
 .study_img {
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.study_img:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
 .mini_title_app {
-    font-size: 2.5rem;
-    margin: 30px 0 25px 0;
-    color: #222;
-    font-weight: 700;
+    font-size: 2.8rem;
+    margin: 40px 0 30px 0;
+    color: #1a1a1a;
+    font-weight: 600;
     text-align: center;
     position: relative;
+    letter-spacing: -0.5px;
 }
 
 .mini_title_app::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #333;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2c2c2c, #6c6c6c);
+    border-radius: 2px;
 }
 
 .work {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 35px;
-    padding: 25px;
-    background-color: #fafafa;
-    border-radius: 12px;
-    border-left: 4px solid #333;
+    padding: 35px;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.work::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #2c2c2c, #6c6c6c);
+}
+.work:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .work-content {
     flex: 1;
     text-align: left;
+    margin-left: 30px;
 }
 
 .project-title {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-    color: #222;
-    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 600;
     line-height: 1.3;
+    letter-spacing: -0.3px;
 }
 
 .project-description {
     font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-    margin-bottom: 15px;
-    max-width: 600px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 25px;
+    max-width: 650px;
 }
 
 .github-link {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #000;
-    color: #fff;
+    padding: 12px 28px;
+    background: #2c2c2c;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
     transition: all 0.3s ease;
-    border: 2px solid #000;
+    border: 2px solid #2c2c2c;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
 .github-link:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: #2c2c2c;
+    border-color: #2c2c2c;
+}
+
+.github-link:hover::before {
+    left: 100%;
 }
 
 .section-line {
-    margin: 35px auto 15px auto;
+    margin: 50px auto 20px auto;
     border: none;
-    border-top: 3px solid #333;
+    border-top: 3px solid #222;
     width: 90%;
     max-width: 800px;
 }
 
 /* レスポンシブデザイン */
+@media (max-width: 1024px) {
+    .projects-container {
+        padding: 0 25px;
+    }
+    
+    .study_img {
+        width: 280px;
+        height: 200px;
+    }
+    
+    .work {
+        padding: 30px;
+    }
+    
+    .work-content {
+        margin-left: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     .work {
         flex-direction: column;
         text-align: center;
+        padding: 25px;
         margin-bottom: 25px;
-        padding: 20px;
+    }
+    
+    .work-content {
+        margin-left: 0;
+        margin-top: 20px;
     }
     
     .study_img {
         width: 100%;
-        max-width: 300px;
-        margin-right: 0;
-        margin-bottom: 20px;
+        max-width: 350px;
+        height: 240px;
+        margin: 0 auto;
     }
     
     .mini_title_app {
-        font-size: 2rem;
-        margin: 25px 0 20px 0;
+        font-size: 2.2rem;
+        margin: 30px 0 25px 0;
+    }
+    
+    .mini_title_app::after {
+        width: 60px;
+        height: 3px;
     }
     
     .project-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        margin-bottom: 12px;
     }
     
     .project-description {
         font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .projects-container {
+        padding: 0 20px;
+    }
+    
+    .study-section {
+        margin-bottom: 45px;
+    }
+    
+    .section-line {
+        margin: 40px auto 15px auto;
+    }
+    
+    .github-link {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .study_img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .mini_title_app {
+        font-size: 1.8rem;
+        margin: 25px 0 20px 0;
+    }
+    
+    .project-title {
+        font-size: 1.4rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
     
     .projects-container {
         padding: 0 15px;
     }
     
-    .study-section {
-        margin-bottom: 40px;
+    .github-link {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        display: block;
+        margin: 8px 0;
+        text-align: center;
     }
     
     .section-line {
-        margin: 30px auto 15px auto;
+        margin: 35px auto 15px auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 360px) {
+    .work {
+        padding: 15px;
+    }
+    
+    .mini_title_app {
+        font-size: 1.6rem;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
     }
 }
 
