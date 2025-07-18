@@ -7,7 +7,6 @@ class Marquee {
   }
   init() {
     this.els.forEach(el => {
-      // 要素が非表示の場合は処理をスキップ
       if (getComputedStyle(el).display === 'none') return;
       
       const options = {
