@@ -1,4 +1,4 @@
-/* 音楽ページ専用スタイル */
+/* 音楽ページ専用スタイル
 
 .music-box {
     max-width: 1200px;
@@ -21,7 +21,7 @@
 }
 
 /* アーティストグリッド */
-.artists-grid {
+/* .artists-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -56,6 +56,8 @@
 }
 
 /* 音楽と私のセクション */
+
+/*
 .music-life-content {
     line-height: 1.8;
 }
@@ -74,6 +76,7 @@
 }
 
 /* プレイリストセクション */
+/*
 .playlist-container {
     margin: 2rem 0;
 }
@@ -118,8 +121,10 @@
     margin-top: 1rem;
     font-style: italic;
 }
+*/
 
 /* 戻るリンク - シックなデザイン */
+/*
 .back-link {
     text-align: center;
     margin: 3rem 0 2rem 0;
@@ -161,8 +166,10 @@
 .back-button:hover::before {
     left: 100%;
 }
+*/
 
 /* レスポンシブデザイン */
+/*
 @media (max-width: 768px) {
     .artists-grid {
         grid-template-columns: 1fr;
@@ -197,4 +204,4 @@
         padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
     }
-}
+} */
