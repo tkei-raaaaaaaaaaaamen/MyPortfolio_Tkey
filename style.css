@@ -312,46 +312,6 @@
     border-radius: 2px;
 }
 
-/* Responsive Timeline */
-@media (max-width: 768px) {
-    .timeline {
-        margin: 0 5%;
-        padding: 20px 0;
-    }
-    
-    .timeline::before {
-        left: 20px;
-    }
-    
-    .timeline-card {
-        flex-direction: column !important;
-        margin-left: 50px;
-        min-height: auto;
-    }
-    
-    .timeline-image {
-        flex: 0 0 150px;
-        order: -1;
-    }
-    
-    .timeline-content {
-        padding: 20px;
-    }
-    
-    .timeline-content h3 {
-        font-size: 1.5rem;
-    }
-    
-    .timeline-content p {
-        font-size: 1.1rem;
-    }
-    
-    .timeline-year {
-        font-size: 1rem;
-        padding: 6px 15px;
-    }
-}
-
 /* 音楽詳細リンクボタン */
 .music-link {
     text-align: center;
@@ -393,11 +353,4 @@
 
 .music-detail-button:hover::before {
     left: 100%;
-}
-
-@media (max-width: 768px) {
-    .music-detail-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
 }
