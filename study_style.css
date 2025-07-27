@@ -142,4 +142,144 @@
     max-width: 800px;
 }
 
+/* レスポンシブデザイン */
+@media (max-width: 1024px) {
+    .projects-container {
+        padding: 0 25px;
+    }
+    
+    .study_img {
+        width: 280px;
+        height: 200px;
+    }
+    
+    .work {
+        padding: 30px;
+    }
+    
+    .work-content {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .work-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .study_img {
+        width: 100%;
+        max-width: 350px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    
+    .mini_title_app {
+        font-size: 2.2rem;
+        margin: 30px 0 25px 0;
+    }
+    
+    .mini_title_app::after {
+        width: 60px;
+        height: 3px;
+    }
+    
+    .project-title {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+    
+    .project-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .projects-container {
+        padding: 0 20px;
+    }
+    
+    .study-section {
+        margin-bottom: 45px;
+    }
+    
+    .section-line {
+        margin: 40px auto 15px auto;
+    }
+    
+    .github-link {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .study_img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .mini_title_app {
+        font-size: 1.8rem;
+        margin: 25px 0 20px 0;
+    }
+    
+    .project-title {
+        font-size: 1.4rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .projects-container {
+        padding: 0 15px;
+    }
+    
+    .github-link {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+    
+    .section-line {
+        margin: 35px auto 15px auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 360px) {
+    .work {
+        padding: 15px;
+    }
+    
+    .mini_title_app {
+        font-size: 1.6rem;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+}
+
 
