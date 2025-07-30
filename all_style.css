@@ -45,7 +45,7 @@ header {
 }
 
 
-/* 最小幅設定 */
+/* 最小幅 */
 html, body {
     min-width: 1200px; 
     overflow-x: auto; 
